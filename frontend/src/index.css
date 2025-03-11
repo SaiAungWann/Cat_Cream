@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+body {
+  @apply bg-gray-100 p-4 m-4 font-serif;
+}
+
+@theme {
+  --color-primary: #fa03bc;
+  --color-secondary: #f7aef8;
+  --color-danger: #ff0000;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
