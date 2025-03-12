@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import NavBar from "../components/NavBar";
 import Footer from "./Footer";
-function App({ children }) {
+function ClientSideLayout({ children }) {
   return (
     <>
       <NavBar />
@@ -11,4 +11,4 @@ function App({ children }) {
   );
 }
 
-export default App;
+export default ClientSideLayout;
