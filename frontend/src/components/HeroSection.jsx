@@ -5,6 +5,7 @@ import IceCream5 from "../assets/5.png";
 import IceCream6 from "../assets/6.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa";
+import { LuAlarmClockCheck } from "react-icons/lu";
 function HeroSection() {
   const BGImage = {
     backgroundImage: `url(${BGImg})`,
@@ -47,17 +48,18 @@ function HeroSection() {
                 Welcome to <span className="text-primary">Cat Cream</span>
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-                explicabo.
+                Sip, relax, and surround yourself with the cutest furry friends
+                at <span className="text-primary font-bold">Cat Cream</span>
+                —where every Ice Cream and Coffee comes with cuddles!
               </p>
               <div className=" flex justify-center items-center gap-4">
-                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2">
-                  <span>My Cart</span>
+                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200">
+                  <span>Order</span>
                   <FaCartShopping />
                 </button>
-                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2">
-                  <span>Order</span>
-                  <FaCartPlus />
+                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200">
+                  <span>Book Table</span>
+                  <LuAlarmClockCheck />
                 </button>
               </div>
             </div>

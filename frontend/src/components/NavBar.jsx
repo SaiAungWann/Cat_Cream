@@ -17,15 +17,15 @@ const NavBar = () => {
         <div className="flex justify-between items-center gap-4">
           <DarkMode />
           <nav>
-            <ul className=" flex items-center justify-between gap-4">
-              <li>
-                <Link to="#home">Home</Link>
+            <ul className=" flex items-center justify-between gap-4 ">
+              <li className="hover:scale-105 transition-transform duration-200 hover:text-secondary">
+                <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="#about">About</Link>
+              <li className="hover:scale-105 transition-transform duration-200 hover:text-secondary">
+                <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="#contact">Contact</Link>
+              <li className="hover:scale-105 transition-transform duration-200 hover:text-secondary">
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -33,7 +33,7 @@ const NavBar = () => {
             <span>My Cart</span>
             <FaCartShopping />
           </button>
-          <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2">
+          <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200">
             <span>Order</span>
             <FaCartPlus />
           </button>
