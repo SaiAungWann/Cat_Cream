@@ -41,9 +41,14 @@ function HeroSection() {
         className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200"
         style={BGImage}
       >
-        <div className=" p-4 w-full">
+        <div className=" p-4 w-full flex justify-center items-center">
           <div className=" grid grid-cols-2 gap-4">
-            <div className=" flex flex-col justify-center items-start space-y-4">
+            <div
+              className=" flex flex-col justify-center items-start space-y-4  lg:max-w-[850px] lg:ml-20"
+              data-aos="zoom-out"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
               <h1 className="text-3xl font-bold sm:text-4xl">Welcome to</h1>
               <h1 className=" text-4xl font-bold sm:text-5xl text-primary">
                 Cat Cream
@@ -54,17 +59,23 @@ function HeroSection() {
                 —where every Ice Cream and Coffee comes with cuddles!
               </p>
               <div className=" flex justify-center items-center mx-auto gap-4">
-                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200">
+                <button className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[150px]">
                   <span>Order</span>
                   <FaCartShopping />
                 </button>
-                <button className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200">
+                <button className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[150px]">
                   <span>Book Table</span>
                   <LuAlarmClockCheck />
                 </button>
               </div>
             </div>
-            <div className="min-h-[450px] sm:min-h-[450px] flex justify-around items-center relative order-1 sm:order-2">
+            <div
+              className="min-h-[450px] sm:min-h-[450px] lg:max-w-[650px] flex justify-around items-center relative order-1 sm:order-2
+              "
+              data-aos="zoom-out"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               <div className="h-[300px] sm:h-[450px] w-[300px] sm:w-[450px]  overflow-hidden flex justify-center items-center">
                 <img
                   src={imageId}
@@ -77,7 +88,7 @@ function HeroSection() {
                   <img
                     src={item.img}
                     alt=""
-                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 p-1"
                     onClick={() =>
                       setImageId(
                         item.id === 1

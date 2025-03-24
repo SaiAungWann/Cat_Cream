@@ -58,11 +58,8 @@ function Testimonial() {
         <Slider {...settings}>
           {TestimonialData.map((data) => {
             return (
-              <div className="">
-                <div
-                  key={data.id}
-                  className=" max-w-150 mx-auto bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-lg flex justify-center items-center flex-col relative"
-                >
+              <div className="" key={data.id}>
+                <div className=" max-w-150 mx-auto bg-gray-200 dark:bg-gray-800 p-4 rounded-lg shadow-lg flex justify-center items-center flex-col relative gap-4">
                   <img
                     src={data.userImg}
                     alt=""

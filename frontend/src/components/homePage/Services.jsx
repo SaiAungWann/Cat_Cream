@@ -5,23 +5,28 @@ import iceCream10 from "../../assets/10.png";
 function Services() {
   return (
     <>
-      <div className=" gap-4 mt-4 pb-10">
+      <div className=" gap-4 mt-4 pb-10 scroll-hidden">
         <div className=" flex justify-center flex-col items-center">
           <h2 className=" text-2xl font-bold">Our Service</h2>
-          <p className=" w-160 text-center">
+          <p className=" w-160 text-center mb-4">
             <span className=" text-2xl text-primary">Cat Cream</span>, you can
             dine in and enjoy delicious treats, get your favorites delivered to
             your door, or relax and play with our adorable cats in a cozy café
             setting!"
           </p>{" "}
         </div>
-        <div className=" grid md:grid-cols-3 grid-cols-1 mt-20 gap-4">
-          <div className="flex flex-col  justify-center items-start mt-10">
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl">
-              <div className=" h-50 rounded-full m-4">
+        <div className=" grid md:grid-cols-3 grid-cols-1 mt-20">
+          <div
+            className="flex flex-col  justify-center items-center mt-10"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
+              <div className=" h-50 rounded-full m-4 ">
                 <img src={iceCream9} alt="" className=" w-60" />
               </div>
-              <div className=" flex flex-col justify-end items-center p-4 rounded-2xl">
+              <div className=" flex flex-col justify-end items-center p-4 rounded-2xl space-y-4">
                 <h2 className=" text-2xl">Dine In</h2>
                 <p className=" text-md text-justify">
                   Enjoy a cozy dining experience with delicious treats while
@@ -35,8 +40,13 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col  justify-center items-start mt-10">
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl">
+          <div
+            className="flex flex-col  justify-center items-center mt-10"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
               <div className=" h-50 rounded-full m-4">
                 <img src={iceCream10} alt="" className=" w-60" />
               </div>
@@ -53,8 +63,13 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col  justify-center items-start mt-10">
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl">
+          <div
+            className="flex flex-col  justify-center items-center mt-10"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-sine"
+          >
+            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
               <div className=" h-50 rounded-full m-4">
                 <img src={iceCream11} alt="" className=" w-60" />
               </div>
