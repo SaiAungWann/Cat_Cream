@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import Logo from "../assets/Cat_Cream_Logo.png";
+import Logo from "../assets/Cat_Cream_Logo-2.png";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
 import { FaCartPlus } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { FaCartPlus } from "react-icons/fa";
 const NavBar = () => {
   return (
     <>
-      <div className="flex justify-between items-center p-5 bg-white dark:bg-gray-900 dark:text-white shadow-md h-20 rounded-t-md">
+      <div className="flex sticky top-0 z-20 justify-between items-center p-5 bg-white dark:bg-gray-800 dark:text-white shadow-md h-20 rounded-t-md">
         <div className=" md:w-35 w-20 items-center">
           <Link to="/">
             <img src={Logo} alt="logo" />

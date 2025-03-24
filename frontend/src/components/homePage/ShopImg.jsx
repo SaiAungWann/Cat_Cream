@@ -1,5 +1,5 @@
 import React from "react";
-import CatRoomImg from "../assets/catsroom.jpg";
+import CatRoomImg from "../../assets/catsroom.jpg";
 
 function ShopImg() {
   return (
