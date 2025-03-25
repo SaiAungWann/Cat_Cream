@@ -85,10 +85,16 @@ function Contact() {
                   <textarea
                     name="message"
                     id=""
-                    className=" w-full h-45 p-2 border-2 border-gray-200 rounded-lg"
+                    className=" w-full h-35 p-2 border-2 border-gray-200 rounded-lg"
                     placeholder=" Enter your message"
                   ></textarea>
                 </div>
+                <button
+                  type="submit"
+                  className=" bg-primary text-white p-2 rounded-lg w-full hover:scale-105"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
