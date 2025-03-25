@@ -52,10 +52,10 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div>
-            <div className=" w-7/8 h-100 bg-gray-100 dark:bg-gray-800 dark:text-white rounded-2xl shadow p-4">
+          <div className=" flex justify-center items-center ">
+            <div className=" w-7/8 h-fit  bg-gray-100 dark:bg-gray-800 dark:text-white rounded-2xl shadow-lg p-4 ">
               <form action="" method="post">
-                <div className=" w-full p-4 flex justify-center items-center">
+                <div className=" w-full flex justify-center items-center">
                   <label htmlFor="name" className=" w-1/3">
                     {" "}
                     Name :
@@ -68,7 +68,20 @@ function Contact() {
                     className=" w-full p-2 border-2 border-gray-200 rounded-lg"
                   />
                 </div>
-                <div className=" w-full p-4 flex justify-center items-center ">
+                <div className=" w-full flex justify-center items-center mt-2">
+                  <label htmlFor="email" className=" w-1/3">
+                    {" "}
+                    Email :
+                  </label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    className=" w-full p-2 border-2 border-gray-200 rounded-lg"
+                  />
+                </div>
+                <div className=" w-full flex justify-center items-center mt-2">
                   <label htmlFor="phone" className=" w-1/3">
                     {" "}
                     Phone :
@@ -81,7 +94,7 @@ function Contact() {
                     className=" w-full p-2 border-2 border-gray-200 rounded-lg"
                   />
                 </div>
-                <div className=" w-full p-4 flex justify-center items-center">
+                <div className=" w-full mt-2 flex justify-center items-center">
                   <textarea
                     name="message"
                     id=""
@@ -91,7 +104,7 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className=" bg-primary text-white p-2 rounded-lg w-full hover:scale-105"
+                  className=" bg-primary mt-2 text-white p-2 rounded-lg w-full hover:scale-105"
                 >
                   Submit
                 </button>

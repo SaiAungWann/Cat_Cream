@@ -4,6 +4,8 @@ import ClientSideLayout from "../components/ClientSideLayout";
 import Home from "../pages/ClientSidePages/Home";
 import About from "../pages/ClientSidePages/About";
 import Contact from "../pages/ClientSidePages/Contact";
+import Login from "../pages/ClientSidePages/Login";
+import Register from "../pages/ClientSidePages/Register";
 
 // React Router v7.3.0
 export default function Index() {
@@ -15,6 +17,8 @@ export default function Index() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
+        <Route path="/user-login" element={<Login />} />
+        <Route path="/user-register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

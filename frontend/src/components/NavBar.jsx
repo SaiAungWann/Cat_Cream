@@ -37,10 +37,20 @@ const NavBar = () => {
             <span>Order</span>
             <FaCartPlus />
           </button>
-          <button className=" hidden flex items-center justify-center gap-2 bg-secondary text-black rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]">
+          <button
+            className=" flex items-center justify-center gap-2 bg-secondary text-black rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
+            onClick={() => {
+              window.location.href = "/user-login";
+            }}
+          >
             <span>Log In</span>
           </button>
-          <button className=" flex items-center justify-center gap-2 bg-cyan-700 text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]">
+          <button
+            className=" flex items-center justify-center gap-2 bg-cyan-700 text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
+            onClick={() => {
+              window.location.href = "/user-register";
+            }}
+          >
             <span>Sign Up</span>
           </button>
         </div>
