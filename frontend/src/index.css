@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 body {
   @apply bg-gray-100 font-serif dark:bg-gray-700 dark:text-white overflow-x-hidden;

@@ -33,26 +33,25 @@ const NavBar = () => {
             <span>My Cart</span>
             <FaCartShopping />
           </button>
-          <button className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]">
+          <Link
+            to={"/orders"}
+            className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
+          >
             <span>Order</span>
             <FaCartPlus />
-          </button>
-          <button
+          </Link>
+          <Link
+            to={"/user-login"}
             className=" flex items-center justify-center gap-2 bg-secondary text-black rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
-            onClick={() => {
-              window.location.href = "/user-login";
-            }}
           >
             <span>Log In</span>
-          </button>
-          <button
+          </Link>
+          <Link
+            to={"/user-register"}
             className=" flex items-center justify-center gap-2 bg-cyan-700 text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
-            onClick={() => {
-              window.location.href = "/user-register";
-            }}
           >
             <span>Sign Up</span>
-          </button>
+          </Link>
         </div>
       </div>
     </>

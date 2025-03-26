@@ -81,12 +81,13 @@ function Login() {
 
                 <div className=" w-full mt-2 flex flex-col justify-center items-center">
                   <p>I don't have an account!</p>
-                  <button
+                  <Link
+                    to="/user-register"
                     type="submit"
-                    className=" bg-primary mt-2 text-white p-2 rounded-lg w-full hover:scale-105 mb-4"
+                    className=" bg-primary mt-2 text-white text-center p-2 rounded-lg w-full hover:scale-105 mb-4"
                   >
                     Sign Up
-                  </button>
+                  </Link>
                 </div>
                 <div className="flex items-center">
                   <hr className="flex-grow border-gray-400" />

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BGImg from "../../assets/BG.png";
-import IceCream4 from "../../assets/4.png";
-import IceCream5 from "../../assets/5.png";
-import IceCream6 from "../../assets/6.png";
+import IceCream4 from "../../assets/ice_cream/4.png";
+import IceCream5 from "../../assets/ice_cream/5.png";
+import IceCream6 from "../../assets/ice_cream/6.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa";
 import { LuAlarmClockCheck } from "react-icons/lu";
@@ -35,6 +35,19 @@ function HeroSection() {
       img: IceCream6,
     },
   ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImageId(
+        imageId === IceCream4
+          ? IceCream5
+          : imageId === IceCream5
+          ? IceCream6
+          : IceCream4
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [imageId]);
+
   return (
     <>
       <div
@@ -80,7 +93,7 @@ function HeroSection() {
                 <img
                   src={imageId}
                   alt=""
-                  className="w-[250px] sm:w-[350px] sm:scale-125 spin"
+                  className="w-[250px] sm:w-[350px] sm:scale-125 spin transition duration-3000 "
                 />
               </div>
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-0 bg-white/30 rounded-full m-4 lg:h-fit">
@@ -88,7 +101,9 @@ function HeroSection() {
                   <img
                     src={item.img}
                     alt=""
-                    className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 p-1"
+                    className={`max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 p-1 rounded-full ${
+                      item.img === imageId ? " scale-120 " : ""
+                    }`}
                     onClick={() =>
                       setImageId(
                         item.id === 1

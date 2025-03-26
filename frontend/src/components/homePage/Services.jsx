@@ -1,7 +1,10 @@
 import React from "react";
-import iceCream9 from "../../assets/9.png";
-import iceCream11 from "../../assets/11.png";
-import iceCream10 from "../../assets/10.png";
+// import iceCream9 from "../../assets/ice_cream/9.png";
+// import iceCream11 from "../../assets/ice_cream/11.png";
+// import iceCream10 from "../../assets/ice_cream/10.png";
+import iceCream10 from "../../assets/ice_cream/10.png";
+import iceCream11 from "../../assets/cats/11.png";
+import iceCream9 from "../../assets/ice_cream/9.png";
 function Services() {
   return (
     <>

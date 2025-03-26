@@ -105,12 +105,13 @@ function Register() {
                 </button>
                 <div className=" w-full mt-2 flex flex-col justify-center items-center">
                   <p>Already have an account?</p>
-                  <button
+                  <Link
+                    to="/user-login"
                     type="submit"
-                    className=" bg-primary mt-2 text-white p-2 rounded-lg w-full hover:scale-105 mb-4"
+                    className=" bg-primary mt-2 text-center text-white p-2 rounded-lg w-full hover:scale-105 mb-4"
                   >
                     Log In
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="flex items-center">
