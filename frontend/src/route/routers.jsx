@@ -7,6 +7,9 @@ import Contact from "../pages/ClientSidePages/Contact";
 import Login from "../pages/ClientSidePages/Login";
 import Register from "../pages/ClientSidePages/Register";
 import ProductDetail from "../pages/ClientSidePages/ProductDetail";
+import ProductList from "../pages/ClientSidePages/ProductList";
+import Cart from "../pages/ClientSidePages/Cart";
+import Wishlist from "../components/Wishlist";
 
 // React Router v7.3.0
 export default function Index() {
@@ -17,7 +20,10 @@ export default function Index() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/orders" element={<ProductDetail />} />
+          <Route path="/myCart" element={<Cart />} />
+          <Route path="/myWishList" element={<Wishlist />} />
+          <Route path="/productDetail" element={<ProductDetail />} />
+          <Route path="/productList" element={<ProductList />} />
         </Route>
         <Route path="/user-login" element={<Login />} />
         <Route path="/user-register" element={<Register />} />

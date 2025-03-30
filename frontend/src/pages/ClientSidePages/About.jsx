@@ -7,40 +7,57 @@ import catSleepImg1 from "../../assets/cats/cat_sleeping_1.png";
 import catSleepImg2 from "../../assets/cats/cat_sleeping_2.png";
 import catSleepImg3 from "../../assets/cats/cat_sleeping_3.png";
 import catSleepImg4 from "../../assets/cats/cat_sleeping_4.png";
+import ImageGal from "../../components/ImageGal";
+import BGImg from "../../assets/BG.png";
 function About() {
-  const [imageId, setImageId] = useState(catPlayingImg1);
-
-  const catImages = [
+  const images = [
     {
-      id: 1,
-      img: catPlayingImg1,
+      original: catPlayingImg1,
+      thumbnail: catPlayingImg1,
     },
     {
-      id: 2,
-      img: catSleepImg2,
+      original: catPlayingImg2,
+      thumbnail: catPlayingImg2,
     },
     {
-      id: 3,
-      img: catPlayingImg3,
+      original: catPlayingImg3,
+      thumbnail: catPlayingImg3,
+    },
+    {
+      original: catSleepImg1,
+      thumbnail: catSleepImg1,
+    },
+    {
+      original: catSleepImg2,
+      thumbnail: catSleepImg2,
+    },
+    {
+      original: catSleepImg3,
+      thumbnail: catSleepImg3,
+    },
+    {
+      original: catSleepImg4,
+      thumbnail: catSleepImg4,
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImageId(
-        imageId === catPlayingImg1
-          ? catSleepImg2
-          : imageId === catSleepImg2
-          ? catPlayingImg3
-          : catPlayingImg1
-      );
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [imageId]);
-
+  const BGImage = {
+    backgroundImage: `url(${BGImg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-800 dark:text-white duration-200">
+      <div
+        className="min-h-[550px] sm:min-h-[600px] bg-gray-100 flex justify-center items-center dark:bg-gray-800 dark:text-white duration-200"
+        style={BGImage}
+      >
         <div className=" grid grid-cols-2 gap-4">
           <div
             className=" flex flex-col justify-center items-start space-y-4  lg:max-w-[850px] lg:ml-20"
@@ -68,34 +85,7 @@ function About() {
             data-aos-duration="800"
             data-aos-once="true"
           >
-            <div className="h-[300px] sm:h-[450px] w-[300px] sm:w-[450px] flex justify-center items-center">
-              <img
-                src={imageId}
-                alt=""
-                className="w-[250px] sm:w-[350px] sm:scale-125 transition duration-3000 ease-linear"
-              />
-            </div>
-            <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-0 bg-white/30 rounded-2xl m-4 lg:h-fit">
-              {catImages.map((item) => (
-                <img
-                  src={item.img}
-                  alt=""
-                  className={`max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200 ${
-                    item.img === imageId ? " scale-120 " : ""
-                  }`}
-                  onClick={() =>
-                    setImageId(
-                      item.id === 1
-                        ? catPlayingImg1
-                        : item.id === 2
-                        ? catSleepImg2
-                        : catPlayingImg3
-                    )
-                  }
-                  key={item.id}
-                />
-              ))}
-            </div>
+            <ImageGal images={images} page={"about"} />
           </div>
         </div>
       </div>

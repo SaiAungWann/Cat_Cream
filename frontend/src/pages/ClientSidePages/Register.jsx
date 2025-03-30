@@ -18,7 +18,7 @@ function Register() {
   };
   return (
     <>
-      <div className=" w-screen min-h-screen " style={BGImage}>
+      <div className=" w-screen min-h-screen text-black" style={BGImage}>
         <div className=" w-6/8 p-4 flex justify-between  items-center ">
           <div className=" max-w-[400px] max-h-[500px] flex justify-center items-center flex-col gap-4">
             {/* <img src={Logo} alt="" className=" w-80" />
@@ -55,7 +55,7 @@ function Register() {
                     name="name"
                     id="name"
                     placeholder="Enter your name"
-                    className=" w-full p-2 border-2 border-gray-200 rounded-lg"
+                    className=" w-full p-2 border-2 border-gray-500 rounded-lg"
                   />
                 </div>
                 <div className=" w-full flex justify-center items-center mt-2">
@@ -68,7 +68,7 @@ function Register() {
                     name="email"
                     id="email"
                     placeholder="Enter your email"
-                    className=" w-full p-2 border-2 border-gray-200 rounded-lg"
+                    className=" w-full p-2 border-2 border-gray-500 rounded-lg"
                   />
                 </div>
                 <div className=" w-full flex justify-center items-center mt-2">
@@ -81,7 +81,7 @@ function Register() {
                     name="password"
                     id="name"
                     placeholder="Enter your password"
-                    className=" w-full p-2 border-2 border-gray-200 rounded-lg"
+                    className=" w-full p-2 border-2 border-gray-500 rounded-lg"
                   />
                 </div>
                 <div className=" w-full flex justify-center items-center mt-2">
@@ -94,7 +94,7 @@ function Register() {
                     name="confirmPassword"
                     id="name"
                     placeholder="Confirm your password"
-                    className=" w-full p-2 border-2 border-gray-200 rounded-lg"
+                    className=" w-full p-2 border-2 border-gray-500 rounded-lg"
                   />
                 </div>
                 <button

@@ -25,7 +25,7 @@ function Services() {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
           >
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
+            <div className=" flex flex-col  justify-end items-center hover:bg-secondary rounded-4xl h-60 shadow-2xl max-w-[400px]">
               <div className=" h-50 rounded-full m-4 ">
                 <img src={iceCream9} alt="" className=" w-60" />
               </div>
@@ -49,7 +49,7 @@ function Services() {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
           >
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
+            <div className=" flex flex-col  justify-end items-center hover:bg-secondary rounded-4xl h-60 shadow-2xl max-w-[400px]">
               <div className=" h-50 rounded-full m-4">
                 <img src={iceCream10} alt="" className=" w-60" />
               </div>
@@ -72,7 +72,7 @@ function Services() {
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
           >
-            <div className=" flex flex-col  justify-end items-center hover:bg-cyan-300 rounded-4xl h-60 shadow-2xl max-w-[400px]">
+            <div className=" flex flex-col  justify-end items-center hover:bg-secondary rounded-4xl h-60 shadow-2xl max-w-[400px]">
               <div className=" h-50 rounded-full m-4">
                 <img src={iceCream11} alt="" className=" w-60" />
               </div>

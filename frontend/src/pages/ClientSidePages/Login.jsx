@@ -18,7 +18,7 @@ function Login() {
   };
   return (
     <>
-      <div className=" w-screen min-h-screen " style={BGImage}>
+      <div className=" w-screen min-h-screen text-black " style={BGImage}>
         <div className=" w-6/8 p-4 flex justify-between  items-center ">
           <div className=" max-w-[400px] max-h-[500px] flex justify-center items-center flex-col gap-4">
             {/* <img src={Logo} alt="" className=" w-80" />
@@ -26,22 +26,22 @@ function Login() {
               More Than Just a Café – A Home for Cat Lovers!
             </h3> */}
           </div>
+          <div className=" w-full h-fit rounded-2xl shadow-lg p-4 mb-2">
+            <nav className=" sm:block">
+              <ul className=" flex items-center justify-between gap-4 ">
+                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary text">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
+                  <Link to="/about">About</Link>
+                </li>
+                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div className=" flex flex-col justify-center items-center ">
-            <div className=" w-full h-fit rounded-2xl shadow-lg p-4 mb-2 underline underline-offset-3 decoration-primary">
-              <nav className=" sm:block">
-                <ul className=" flex items-center justify-between gap-4 ">
-                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary text">
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
-                    <Link to="/about">About</Link>
-                  </li>
-                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
-                    <Link to="/contact">Contact</Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
             <div className=" w-120 h-fit  bg-gray-100/25 rounded-2xl shadow-lg p-4 ">
               <h1 className=" text-2xl font-bold text-center mb-4">Sign In</h1>
               <form action="" method="post">

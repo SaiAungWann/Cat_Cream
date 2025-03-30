@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
 import Logo from "../assets/Cat_Cream_Logo-2.png";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaCartShopping, FaHeartCirclePlus } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
 import { FaCartPlus } from "react-icons/fa";
+import { MdRestaurantMenu } from "react-icons/md";
 
 const NavBar = () => {
   return (
@@ -29,16 +30,26 @@ const NavBar = () => {
               </li>
             </ul>
           </nav>
-          <button className=" hidden flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2">
+          <Link
+            to={"/myWishList"}
+            className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2"
+          >
+            <span>My Wishlist</span>
+            <FaHeartCirclePlus className="mx-auto text-2xl" />
+          </Link>
+          <Link
+            to={"/myCart"}
+            className=" flex items-center justify-between gap-2 bg-primary text-white rounded-xl py-1 px-2"
+          >
             <span>My Cart</span>
             <FaCartShopping />
-          </button>
+          </Link>
           <Link
-            to={"/orders"}
+            to={"/productList"}
             className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
           >
-            <span>Order</span>
-            <FaCartPlus />
+            <span>Menu</span>
+            <MdRestaurantMenu />
           </Link>
           <Link
             to={"/user-login"}

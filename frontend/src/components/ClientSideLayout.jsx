@@ -18,6 +18,7 @@ function ClientSideLayout() {
     });
     AOS.refresh();
   }, []);
+
   return (
     <>
       <NavBar />
