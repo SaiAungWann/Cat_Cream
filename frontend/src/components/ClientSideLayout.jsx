@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTop from "./ScrollToTop";
 
 // ..
 
@@ -21,6 +22,7 @@ function ClientSideLayout() {
 
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <Outlet />
       <Footer />

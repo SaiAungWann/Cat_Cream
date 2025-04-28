@@ -5,6 +5,7 @@ import { FaCartShopping, FaHeartCirclePlus } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
 import { FaCartPlus } from "react-icons/fa";
 import { MdRestaurantMenu } from "react-icons/md";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -50,6 +51,13 @@ const NavBar = () => {
           >
             <span>Menu</span>
             <MdRestaurantMenu />
+          </Link>
+          <Link
+            to={"/user-profile"}
+            className=" flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px]"
+          >
+            <span>Profile</span>
+            <FaRegUserCircle />
           </Link>
           <Link
             to={"/user-login"}

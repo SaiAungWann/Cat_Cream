@@ -6,33 +6,33 @@ import { FaHeartCirclePlus } from "react-icons/fa6";
 function Cart() {
   const navigate = useNavigate();
   const products = [
-    { id: 1, name: "Vanilla" },
-    { id: 2, name: "Chocolate" },
-    { id: 3, name: "Strawberry" },
-    { id: 4, name: "Mango" },
+    { id: 1, name: "Vanilla", prize: 10, size: "Small", quantity: 1 },
+    { id: 2, name: "Chocolate", prize: 12, size: "Medium", quantity: 1 },
+    { id: 3, name: "Strawberry", prize: 15, size: "Large", quantity: 1 },
+    { id: 4, name: "Mango", prize: 20, size: "Extra Large", quantity: 1 },
   ];
   return (
     <>
       <div>
         <div className=" grid grid-cols-2">
           <div className=" flex flex-col justify-center w-full gap-4 p-4">
-            <h1 className=" text-2xl mx-auto font-bold">My Wishlist</h1>
+            <h1 className=" text-2xl mx-auto font-bold">My Cart Items</h1>
             <table className=" table items-center">
               <thead>
                 <tr>
                   <th>Picture</th>
                   <th>Name</th>
+                  <th>Size</th>
                   <th>Price</th>
+                  <th></th>
+                  <th>Quantity</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 {products.map((product) => (
-                  <tr
-                    key={product.id}
-                    onClick={() => navigate("/productDetail")}
-                  >
-                    <td>
+                  <tr key={product.id}>
+                    <td onClick={() => navigate("/productDetail")}>
                       <img
                         src={iceCream9}
                         alt={product.name}
@@ -40,7 +40,35 @@ function Cart() {
                       />
                     </td>
                     <td>{product.name}</td>
-                    <td>$10-$20</td>
+                    <td>
+                      <p className=" bg-gray-300 rounded-lg p-1">
+                        {product.size}
+                      </p>
+                    </td>
+                    <td>{product.prize}</td>
+                    <td className="">
+                      <button
+                        className=" bg-gray-400 p-2 rounded-xl text-white hover:scale-105 w-10 mr-4"
+                        onClick={() => {
+                          product.quantity + 1;
+                        }}
+                      >
+                        +
+                      </button>
+                      <button
+                        className=" bg-gray-400 p-2 rounded-xl text-white hover:scale-105 w-10"
+                        onClick={() => {
+                          product.Quantity - 1;
+                        }}
+                      >
+                        -
+                      </button>
+                    </td>
+                    <td>
+                      <button className="  p-2 rounded-xl hover:scale-105">
+                        {product.quantity}
+                      </button>
+                    </td>
 
                     <td>
                       <button className=" bg-danger p-2 rounded-xl text-white hover:scale-105">
@@ -53,10 +81,13 @@ function Cart() {
               <tfoot>
                 <tr className=" h-15">
                   <td colSpan={2}>Total</td>
+                  <td></td>
                   <td>$100</td>
+                  <td></td>
+                  <td>4</td>
 
                   <td>
-                    <button className=" bg-danger p-2 rounded-xl hover:scale-105">
+                    <button className=" bg-danger text-white p-2 rounded-xl hover:scale-105">
                       Remove All
                     </button>
                   </td>
@@ -82,9 +113,11 @@ function Cart() {
                     <p>$ 220</p>
                   </div>
                 </div>
+
                 <button
                   type="submit"
                   className=" bg-primary mt-2 text-white p-2 rounded-lg w-full hover:scale-105"
+                  onClick={() => navigate("/checkOut")}
                 >
                   Check Out (4)
                 </button>

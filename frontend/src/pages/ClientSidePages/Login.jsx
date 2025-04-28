@@ -26,22 +26,22 @@ function Login() {
               More Than Just a Café – A Home for Cat Lovers!
             </h3> */}
           </div>
-          <div className=" w-full h-fit rounded-2xl shadow-lg p-4 mb-2">
-            <nav className=" sm:block">
-              <ul className=" flex items-center justify-between gap-4 ">
-                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary text">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
-                  <Link to="/about">About</Link>
-                </li>
-                <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
           <div className=" flex flex-col justify-center items-center ">
+            <div className=" w-full h-full rounded-2xl shadow-lg p-4 mb-2">
+              <nav className=" sm:block">
+                <ul className=" flex items-center justify-between gap-4 ">
+                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary text">
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li className="hover:scale-105 transition-transform duration-200 hover:text-primary">
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <div className=" w-120 h-fit  bg-gray-100/25 rounded-2xl shadow-lg p-4 ">
               <h1 className=" text-2xl font-bold text-center mb-4">Sign In</h1>
               <form action="" method="post">
