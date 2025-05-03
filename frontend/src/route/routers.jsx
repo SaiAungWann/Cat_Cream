@@ -18,7 +18,7 @@ import Cart from "../pages/ClientSidePages/Cart";
 import Wishlist from "../components/Wishlist";
 import CheckOut from "../pages/ClientSidePages/CheckOut";
 import Payment from "../pages/ClientSidePages/Payment";
-import UserProfile from "../pages/ClientSidePages/UserProfile";
+import UserProfile from "../pages/ClientSidePages/UserProfiles";
 
 // React Router v7.3.0
 export default function Index() {
@@ -63,6 +63,7 @@ export default function Index() {
         { path: "/checkOut", element: <CheckOut /> },
         { path: "/payment", element: <Payment /> },
         { path: "/user-profile", element: <UserProfile /> },
+        { path: "/user-profile/:id", element: <UserProfile /> },
       ],
     },
     {

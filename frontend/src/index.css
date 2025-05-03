@@ -35,3 +35,9 @@ body {
 tr {
   @apply border-collapse text-center mx-auto w-full max-h-[50px] border-b-2 border-black table-auto;
 }
+.input {
+  @apply border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+.checkbox {
+  @apply h-4 w-4 text-green-600 focus:ring-green-500;
+}

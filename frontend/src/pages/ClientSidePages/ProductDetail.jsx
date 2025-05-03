@@ -44,7 +44,7 @@ function ProductDetail() {
         <div className=" grid grid-cols-2 gap-4 min-h-[450px]">
           <ImageGal images={images} page={"order"} />
           <div className=" flex justify-center items-center ">
-            <div className=" w-[450px] h-[450px]  bg-gray-100 dark:bg-gray-800 dark:text-white rounded-2xl shadow-lg p-4 ">
+            <div className=" w-[450px] h-[450px]  bg-gray-100 dark:bg-gray-800 dark:text-white rounded-2xl shadow-2xl p-4 ">
               <div className=" w-full flex justify-center items-center">
                 <label htmlFor="name" className=" w-1/3 flex justify-between">
                   {" "}
@@ -54,12 +54,30 @@ function ProductDetail() {
                   Stawberry
                 </p>
               </div>
-              <div className=" w-full flex justify-center items-center mt-2">
+              <div className=" w-full flex justify-center items-center mt-2 hover:cursor-grabbing">
                 <label htmlFor="size" className=" w-1/3 flex justify-between">
                   {" "}
                   Size <p className=" mr-2">:</p>
                 </label>
                 <DropDown page={"order"} />
+              </div>
+              <div className=" w-full flex justify-center items-center mt-2">
+                <label htmlFor="size" className=" w-1/3 flex justify-between">
+                  {" "}
+                  Prise <p className=" mr-2">:</p>
+                </label>
+                <p className=" w-full p-2 border-2 border-gray-200 rounded-lg">
+                  $ 100
+                </p>
+              </div>
+              <div className=" w-full flex justify-center items-center mt-2">
+                <label htmlFor="size" className=" w-1/3 flex justify-between">
+                  {" "}
+                  Rating <p className=" mr-2">:</p>
+                </label>
+                <p className=" w-full p-2 border-2 border-gray-200 rounded-lg">
+                  8/10
+                </p>
               </div>
               <div className=" w-full flex justify-center items-center mt-2">
                 <label htmlFor="phone" className=" w-1/3 flex justify-between">
