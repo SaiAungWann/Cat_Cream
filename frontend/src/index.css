@@ -41,3 +41,6 @@ tr {
 .checkbox {
   @apply h-4 w-4 text-green-600 focus:ring-green-500;
 }
+.btn {
+  @apply flex items-center justify-center gap-2 bg-primary text-white rounded-xl py-1 px-2 hover:scale-105 transition-transform duration-200 min-w-[100px];
+}

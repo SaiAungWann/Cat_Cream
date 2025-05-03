@@ -17,7 +17,7 @@ function Footer() {
           </p>
           <p className=" flex items-center gap-4">
             <FaLocationDot />
-            D-27 Ya Da Na, Mingalar Oo Qr., Taunggyi.
+            No.(128) 20 St, Latha Tsp, Yangon, Myanmar.
           </p>
           <p className=" flex items-center gap-2">
             <FaMobileAlt />
